@@ -9,13 +9,13 @@ import json
 import os
 
 app = Flask(__name__)
-#CORS(app, origins="http://localhost:3000")
+CORS(app, origins="http://localhost:3000")
 CORS(app, origins="https://ewastehub-project.vercel.app/")
 
 @app.route('/')
 #@app.route('/get_chart_data/<state_name>')
-def index():    
-    return render_template('index.html')
+# def index():    
+#     return render_template('index.html')
 #@app.route('/get_chart_data')
 @app.route('/get_chart_data/<state_name>')
 #def get_chart_data():
