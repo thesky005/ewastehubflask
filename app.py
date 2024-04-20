@@ -8,7 +8,8 @@ from flask_cors import CORS
 import json
 
 app = Flask(__name__)
-CORS(app, origins="http://localhost:3000")
+#CORS(app, origins="http://localhost:3000")
+CORS(app, origins="https://ewastehub-project.vercel.app/")
 
 @app.route('/')
 #@app.route('/get_chart_data/<state_name>')
